@@ -14,11 +14,18 @@ def index(request):
 
     for details in user_details:
         user_dict = {}
-        user_dict["name"] = details.name
-        user_dict["age"] = details.age
-        my_list.append(user_dict)
+        hobby_list = []
+        user_dict["country"] = details.country
+        user_dict["address"] = details.address
+        user_dict["mobile"] = details.mobile
+        user_dict["email"] = details.email
+        hobby_list.append(details.hobby1)
+        hobby_list.append(details.hobby2)
+        hobby_list.append(details.hobby3)
+        user_dict["hobbies"] = hobby_list
+        #my_list.append(user_dict)
 
-    uploaded = json.dumps(my_list)
+    uploaded = json.dumps(user_dict)
 
     context = {
         'User_details' : uploaded
