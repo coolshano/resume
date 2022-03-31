@@ -1,0 +1,161 @@
+[uWSGI] getting INI configuration from resume.ini
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Mar 22 19:10:22 2022] ***
+compiled with version: 9.4.0 on 22 March 2022 11:44:18
+os: Linux-5.13.0-1018-oracle #22~20.04.1-Ubuntu SMP Wed Feb 16 09:28:40 UTC 2022
+nodename: resume-server
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /root/resume/myresume
+detected binary path: /root/django_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/resume
+your processes number limit is 3606
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:80 fd 3
+uwsgi socket 0 bound to UNIX address sample-app.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /root/django_project/env
+Set PythonHome to /root/django_project/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55ae38556990
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55ae38556990 pid: 16446 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16446)
+spawned uWSGI worker 1 (pid: 16448, cores: 1)
+spawned uWSGI worker 2 (pid: 16449, cores: 1)
+spawned uWSGI worker 3 (pid: 16450, cores: 1)
+spawned uWSGI worker 4 (pid: 16451, cores: 1)
+spawned uWSGI worker 5 (pid: 16452, cores: 1)
+spawned uWSGI http 1 (pid: 16453)
+SIGINT/SIGTERM received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 16453)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket sample-app.sock removed.
+[uWSGI] getting INI configuration from resume.ini
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Mar 22 19:10:49 2022] ***
+compiled with version: 9.4.0 on 22 March 2022 11:44:18
+os: Linux-5.13.0-1018-oracle #22~20.04.1-Ubuntu SMP Wed Feb 16 09:28:40 UTC 2022
+nodename: resume-server
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /root/resume/myresume
+detected binary path: /root/django_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/resume
+your processes number limit is 3606
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:80 fd 3
+uwsgi socket 0 bound to UNIX address sample-app.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /root/django_project/env
+Set PythonHome to /root/django_project/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55acb2a81990
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55acb2a81990 pid: 16454 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16454)
+spawned uWSGI worker 1 (pid: 16456, cores: 1)
+spawned uWSGI worker 2 (pid: 16457, cores: 1)
+spawned uWSGI worker 3 (pid: 16458, cores: 1)
+spawned uWSGI worker 4 (pid: 16459, cores: 1)
+spawned uWSGI worker 5 (pid: 16460, cores: 1)
+spawned uWSGI http 1 (pid: 16461)
+<class 'str'>
+[pid: 16459|app: 0|req: 1/1] 175.157.23.206 () {36 vars in 595 bytes} [Tue Mar 22 19:10:55 2022] GET / => generated 5713 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 208 bytes (2 switches on core 0)
+[pid: 16460|app: 0|req: 1/2] 175.157.23.206 () {38 vars in 677 bytes} [Tue Mar 22 19:10:56 2022] GET /static/me.jpg => generated 0 bytes in 17 msecs (HTTP/1.1 304) 5 headers in 175 bytes (1 switches on core 0)
+Gracefully killing worker 4 (pid: 16459)...
+Gracefully killing worker 3 (pid: 16458)...
+Gracefully killing worker 2 (pid: 16457)...
+Gracefully killing worker 1 (pid: 16456)...
+Gracefully killing worker 5 (pid: 16460)...
+gateway "uWSGI http 1" has been buried (pid: 16461)
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/resume/myresume
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (sample-app.sock)
+running /root/django_project/env/bin/uwsgi
+[uWSGI] getting INI configuration from resume.ini
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Mar 22 19:11:42 2022] ***
+compiled with version: 9.4.0 on 22 March 2022 11:44:18
+os: Linux-5.13.0-1018-oracle #22~20.04.1-Ubuntu SMP Wed Feb 16 09:28:40 UTC 2022
+nodename: resume-server
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /root/resume/myresume
+detected binary path: /root/django_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/resume
+your processes number limit is 3606
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:80 fd 3
+uwsgi socket 0 inherited UNIX address sample-app.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /root/django_project/env
+Set PythonHome to /root/django_project/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55d7f108c8b0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d7f108c8b0 pid: 16454 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 16454)
+spawned uWSGI worker 1 (pid: 16464, cores: 1)
+spawned uWSGI worker 2 (pid: 16465, cores: 1)
+spawned uWSGI worker 3 (pid: 16466, cores: 1)
+spawned uWSGI worker 4 (pid: 16467, cores: 1)
+spawned uWSGI worker 5 (pid: 16468, cores: 1)
+spawned uWSGI http 1 (pid: 16469)
+<class 'str'>
+[pid: 16467|app: 0|req: 1/1] 175.157.23.206 () {36 vars in 596 bytes} [Tue Mar 22 19:11:46 2022] GET / => generated 5713 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 208 bytes (2 switches on core 0)
+[pid: 16466|app: 0|req: 1/2] 175.157.23.206 () {38 vars in 677 bytes} [Tue Mar 22 19:11:47 2022] GET /static/me.jpg => generated 0 bytes in 18 msecs (HTTP/1.1 304) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 16465|app: 0|req: 1/3] 175.157.23.206 () {38 vars in 678 bytes} [Tue Mar 22 19:11:47 2022] GET /static/me.jpg => generated 0 bytes in 18 msecs (HTTP/1.1 304) 5 headers in 175 bytes (1 switches on core 0)
+Wed Mar 23 03:17:24 2022 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Mar 23 03:17:24 2022 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Mar 23 03:17:24 2022 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Mar 23 03:17:24 2022 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Mar 23 03:17:24 2022 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
